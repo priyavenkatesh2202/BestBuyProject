@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="Url" value="https://www.bestbuy.com/"/>
+  <listeners>
+    <listener class-name="utils.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="test.CreateAcTC_002">
+        <methods>
+          <include name="CreateAcInvalid"/>
+          <include name="launchingBrowser"/>
+        </methods>
+      </class> <!-- test.CreateAcTC_002 -->
+      <class name="test.VerifyMenuTC_001">
+        <methods>
+          <include name="verifyTC"/>
+          <include name="launchingBrowser"/>
+        </methods>
+      </class> <!-- test.VerifyMenuTC_001 -->
+      <class name="test.BLinkTC_002">
+        <methods>
+          <include name="linkVerifyInvalid"/>
+          <include name="launchingBrowser"/>
+        </methods>
+      </class> <!-- test.BLinkTC_002 -->
+      <class name="test.SignInTC_002">
+        <methods>
+          <include name="SignInT"/>
+          <include name="launchingBrowser"/>
+        </methods>
+      </class> <!-- test.SignInTC_002 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
